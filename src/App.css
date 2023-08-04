@@ -18,17 +18,21 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-@keyframes logo-spin {
+/* @keyframes logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-}
+} */
 
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+
+  .pokemon {
     animation: logo-spin infinite 20s linear;
   }
 }
@@ -41,107 +45,107 @@
   color: #888;
 }
 
+.pokemon{
+  padding: 0px;
+  height: 250px;
+  width: 250px;
+}
 
-.pokemon-cards {
+.text-description{
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
   justify-content: center;
 }
 
-.pokemon-card {
-  border: 1px solid #ccc;
-  background-color: #dcd9d9;
-  border-radius: 8px;
-  padding: 10px;
-  width: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.card-hover{
+  width: 16rem
 }
 
-.pokemon-image img {
+.card-hover:hover{
+  transform: scale(1.1);
+}
+
+.poke-type{
+  color: whitesmoke;
+  border-radius: 3%;
+  font-size: small;
   width: 100%;
-  height: 150px;
-  object-fit: cover;
+}
 
+.grass{
+  background-color: #5ced77;
+}
+
+.fire{
+  background-color: #e82c39;
+}
+
+.water{
+  background-color: #1d78e0;
+}
+.electric{
+  background-color: #d6e01d;
 
 }
 
-
-
-.id {
-  font-family: "Flexo-Bold",arial,sans-serif;
-  color: #919191;
-  font-size: 80%;
-  padding-top: 2px;
-  
+.normal{
+  background-color: #a8a878;
 }
 
-
-.pokemon-info  {
-color: black;
-padding: initial;
-margin: auto;
+.dark{
+  background-color: #333634;
 }
 
- .pokemon-info h5 {
-  font-family: "Flexo-Demi",arial,sans-serif;
-  color: #313131;
-  text-transform: none;
-  font-size: 145%;
-  margin-bottom: 5px;
+.flying{
+  background-color: #a890f0;
+}
+.poison{
+  background-color: #a040a0;
+}
+.ground{
+  background-color: #E5B660;
+}
+.rock{
+  background-color: #A89D63;
+}
+.bug{
+  background-color: #97AB3E;
+}
+.ghost{
+   background-color: #826F96;
+}
+.steel{
+  background-color: #8CB4BD;
+}
+.psychic{
+  background-color: #F46A92;
+}
+.ice{
+  background-color: #71DBD3;
+}
+.dragon{
+  background-color: #5C64AF;
+}
+.fairy{
+  background-color: #F67EAB;
+}
+.fighting{
+  background-color: #F96663;
 }
 
-.pokemon-types {
-  display: flex;
-  gap: 5px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.pokeball-bg{
+  background-image: url("https://getwallpapers.com/wallpaper/full/1/7/0/1100770-pokeball-background-2000x1991-meizu.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
 }
 
-.pokemon-types li {
-  background-color: #f9f9f9;
-  padding: 5px 10px;
-  border-radius: 5px;
-}
+a:link { text-decoration: none; }
 
 
-/* .pokemon-types li {
-  background-color: #f1f1f1;
-  padding: 5px 10px;
-  border-radius: 5px;
-} */
-
-/* Define background colors for specific types */
-.pokemon-types.fire li {
-  background-color: orange;
-    
-}
-
-.pokemon-types.water li {
-  background-color: blue;
-}
-
-.pokemon-types.grass li {
-  background-color: green;
-}
+a:visited { text-decoration: none; }
 
 
-.pokemon-types.bug li {
-  background-color: green;
-}
-
-.pokemon-types.normal li {
-  background-color: gray;
-}
+a:hover { text-decoration: none; }
 
 
-.pokemon-types.flying li {
-  background-color: lightblue;
-}
-
-.pokemon-types.poison li {
-  background-color: violet;
-}
+a:active { text-decoration: none; }
